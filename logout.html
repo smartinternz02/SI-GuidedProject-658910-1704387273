@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback and Contact Form</title>
+    <style>
+        /* Apply a light background color to the entire page */
+        body {
+            background-color: #f2f2f2; /* You can change this color code */
+            color: #333; /* Text color */
+            font-family: Arial, sans-serif; /* Font style */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        /* Add styling to the page content */
+        .content {
+            max-width: 800px; /* Set a maximum content width */
+            margin: 0 auto; /* Center align the content */
+            padding: 20px; /* Add spacing around the content */
+            background-color: #fff; /* Content background color */
+            border-radius: 10px; /* Add rounded corners to the content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback and Contact Form</h1>
+    <p>Please use this form to provide feedback or to contact us with any issues you are facing.</p>
+
+    <form action="submit_feedback.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Feedback or Issue:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <label for="contact">Contact Information (optional):</label>
+        <input type="text" id="contact" name="contact"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <a href="indexpage.html">Back to Home</a>
+    <a href="contact.html"></a>
+<div>
+</body>
+</html>

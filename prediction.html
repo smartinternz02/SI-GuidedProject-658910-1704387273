@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+</head>
+<body>
+    <style>
+        /* Apply a light background color to the entire page */
+        body {
+            background-color: #f2f2f2; /* You can change this color code */
+            color: #333; /* Text color */
+            font-family: Arial, sans-serif; /* Font style */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        /* Add styling to the page content */
+        .content {
+            max-width: 800px; /* Set a maximum content width */
+            margin: 0 auto; /* Center align the content */
+            padding: 20px; /* Add spacing around the content */
+            background-color: #fff; /* Content background color */
+            border-radius: 10px; /* Add rounded corners to the content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+        }
+    </style>
+    <h1>Admin Login</h1>
+
+    <form action="admin_login.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+    <a href="indexpage.html">Back to Home</a>
+<div>
+</body>
+</html>
